@@ -1,0 +1,311 @@
+<!DOCTYPE html> <!-- The DOCTYPE tells the browser what kind of document this is (HTML) -->
+<html lang="en">
+  <head> <!-- The head tag includes important information about the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- This line defines something called "character encoding"
+    This will allow the browser to display certain characters (such as non-Roman letters) correctly.
+    You should include this line in the head of all of your webpages. -->
+    <title>My Notes</title> <!-- This is the title of your page (what appears in the name of a browser tab) -->
+    <link rel="stylesheet" href="css/style.css"> <!-- This line links your CSS stylesheet to your HTML (see Lesson 1.3) -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+<body>
+  <!-- The body tag is where the "flesh" of your HTML goes -->
+  <!-- Write your HTML here -->
+  <div class="TOC">
+    <h1 class="title">Table of Contents</h1>
+      <ol>
+        <li class="TOS-about"><a href="#about">About Peter Simpson</a>
+          <ul>
+            <li><a href="#about-living-around-D.C.">Living Around D.C.</a></li>
+            <li><a href="#about-studying-with-udacity">Studying with Udacity</a></li>
+            <li><a href="#about-video-playlist">Video Playlist</a></li>
+          </ul>
+        </li>
+        <li class="TOC-lesson"><a href="#lesson-1">Lesson 1: The Basics of the Web and HTML</a>
+          <ul>
+            <li><a href="#lesson-1-1">How the Web Works</a></li>
+            <li><a href="#lesson-1-2">HTML</a></li>
+            <li><a href="#lesson-1-3">Tags and Elements</a></li>
+            <li><a href="#lesson-1-4">Why Computers are Stupid</a></li>
+            <li><a href="#lesson-1-5">Inline vs Block Elements</a></li>
+          </ul>
+        </li>
+        <li class="TOC-lesson"><a href="#lesson-2">Lesson 2: Creating a Structured Document with HTML</a>
+          <ul>
+            <li><a href="#lesson-2-1">Developer Tools</a></li>
+            <li><a href="#lesson-2-2">HTML's "tree-like" Structure</a></li>
+            <li><a href="#lesson-2-3">Indentations and Boxes</a></li>
+            <li><a href="#lesson-2-4">Text Editors</a></li>
+          </ul>
+        </li>
+        <li class="TOC-lesson"><a href="#lesson-3">Lesson 3: Adding CSS Style to HTML Structure</a>
+          <ul>
+            <li><a href="#lesson-3-1">Avoiding Repeating Code and Errors</a></li>
+            <li><a href="#lesson-3-2">CSS</a></li>
+            <li><a href="#lesson-3-3">Coding Resources</a></li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+    <h1 class="title">About Me</h1>
+    <div class="content">
+      <h2 class="content-sub-title" id="about">About Peter Simpson</h2>
+      <div class="concept" id="about-living-around-D.C.">
+        <h3 class="concept-sub-title">Living Around D.C.</h3>
+        <div class="concept-description">
+          <p class="description-text">
+            While there are plenty of interesting places around the US, Washington D.C. offers an interesting city life,
+            with plenty of cafes, cinemas, city parks, and museums to explore.
+            Living around here for several years does make me homesick for New Zealand, once in a while,
+            but it is an adventure in itself to be here, and to be able to explore another country.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="about-studying-with-udacity">
+        <h3 class="concept-sub-title">Studying with Udacity</h3>
+        <div class="concept-description">
+          <p class="description-text">
+            While I was studying at Victoria University of Wellington, I developed an interest in web design.
+            But I always felt rushed, when I took the courses there, and a lot of the time,
+            I would go from one project to another, with plenty of questions and some confusion.
+            Usually this was because I wasn't given the time to learn at my own pace.
+            Udacity gives me time to understand what I am learning,
+            so I won't forget most of the things I have learned after I have finished the projects and quizzes.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="about-video-playlist">
+        <h3 class="concept-sub-title">Video Playlist</h3>
+        <div class="concept-description">
+          <p class="description-text"><b>Here are some links to some funny videos I found on You Tube:</b></p>
+          <ul class="no-bullets">
+            <li class="list-text">
+              <a href="http://www.youtube.com/watch?v=l5ODwR6FPRQ">
+                Simon's Cat: Crazy Time</a>
+                - A cartoon of a man's life and adventures with his cat.
+            </li>
+            <li class="list-text">
+                <a href="http://www.youtube.com/watch?v=rmPZzc5tGUk">
+                  Google Dad Directions</a>
+                  - If a Dad decided where to direct you while driving.
+            </li>
+            <li class="list-text">
+              <a href="http://www.youtube.com/watch?v=D5QzTkdvI54">
+                America's Smallest Brewery</a>
+                - A funny take on niche market brews of alcohol.
+            </li>
+          </ul>
+          </div>
+      </div>
+    </div>
+  <h1 class="title">Important Concepts</h1>
+  <div class="content">
+    <h2 class="content-sub-title" id="lesson-1">Lesson 1: The Basics of the Web and HTML</h2>
+      <div class="concept" id="lesson-1-1">
+        <h3 class="concept-sub-title">How the Web Works</h3>
+        <div class="concept-description">
+          <figure>
+            <img class="image" src="img/web.jpg" alt="A spider web illustrates the network of web pages and computers">
+            <figcaption class="image-caption">The World Wide Web</figcaption>
+          </figure>
+          <p class="description-text">
+            Computers connect together, in what is known as the web or world wide web.
+            When you visit a web page such as udacity.com, your computer sends a request for information to a <b>'Server'</b>,
+            which acts kind of like a phone book directing people to each other.
+            This <b>'Server'</b> sends information back and forth to your browser, and allows you to view the web page.
+          </p>
+        </div>
+      </div>
+    <div class="concept" id="lesson-1-2">
+      <h3 class="concept-sub-title">HTML</h3>
+      <div class="concept-description">
+        <p class="description-text">
+          HTML or Hypertext Markup language is what we use to view and explore the web.
+          This takes the form of HTML documents, which contain text,
+          and a <b>'Markup'</b> that determines what the content of the page will look like once it is loaded.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-1-3">
+      <h3 class="concept-sub-title">Tags and Elements</h3>
+      <div class="concept-description">
+        <p class="description-text">
+          HTML documents are made up of <b>Elements</b>. We use <b>Tags</b> to tell the browser what elements will be used and in what way.
+          If there is text on a web page for example,
+          then you might like to use a <b>bold</b> tag on some important words,
+          use the <em>italics</em> or em tag, or perhaps create a
+          break between words or sentances with a
+          <br><b>break</b> tag.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-1-4">
+      <h3 class="concept-sub-title">Why Computers are Stupid</h3>
+      <div class="concept-description">
+        <p class="description-text">
+          Because when you put content into a computer, it will interpret exactly what you put in,
+          even if it means that a program won't load correctly,
+          which is why it is important to make sure that tags and elements of a program are correct
+          before you ask a computer to load them.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-1-5">
+      <h3 class="concept-sub-title">Inline vs Block Elements</h3>
+      <div class="concept-description">
+        <p class="description-text">
+          HTML elements fall into two categories, either <b>block</b> or <b>inline</b> elements.
+          Block elements can take up the full width of a page, whereas inline elements cannot. For example, a <b>paragraph</b> or <b>p</b> tag creates a invisible box around content.
+          Inline elements such as the <b>span</b> tag create an invisible inline box tightly <span>around content</span>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <h2 class="content-sub-title" id="lesson-2">Lesson 2: Creating a Structured Document with HTML</h2>
+      <div class="concept" id="lesson-2-1">
+        <h3 class="concept-sub-title">Developer Tools</h3>
+        <div class="concept-description">
+          <figure>
+            <img class="image" src="img/construction.jpg" alt="Constructing a house is like constructing a Web Page">
+            <figcaption class="image-caption">Structuring the web page</figcaption>
+          </figure>
+          <p class="description-text">
+            Using <b>Developer Tools</b> on <b>Firefox</b> or <b>Chrome</b>, you can look at what makes a web page,
+            in terms of how the HTML document is set up, and make modifications without
+            having to make the changes directly on the web page itself.
+          </p>
+          <p class="description-text">
+            Using Developer Tools the tags can be altered, such as border-radius or color,
+            to see what a change on the web page would do.
+            This web page uses both border-radius and color, so it was helpful to use
+            Developer Tools to test out what the page would look like,
+            when I was putting it together.
+          </p>
+        </div>
+      </div>
+    <div class="concept" id="lesson-2-2">
+      <h3 class="concept-sub-title">HTML's "tree-like" Structure</h3>
+      <div class="concept-description">
+        <p class="description-text">
+          HTML documents are built much like a "tree", with HTML code branching out from each other,
+          with <b>child</b> elements being the smaller branches,
+          and the larger branches being <b>parent</b> elements.
+          You can view the "tree" structure,
+          and follow the branches from the body of the HTML,
+          to smaller branches such as the <em>divs</em>,
+          <em>classes</em>, and paragraph or <em>P</em> tags.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-2-3">
+      <h3 class="concept-sub-title">Indentations and Boxes</h3>
+      <div class="concept-description">
+        <p class="description-text">
+          When you look at an HTML page on a text-editor, you can see indentations,
+          which go further and further in, this shows which element tags correspond to
+          what content boxes. The further in the indentation, the more <em>nested</em> the box
+          would be in that HTML document.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-2-4">
+      <h3 class="concept-sub-title">Text Editors</h3>
+      <div class="concept-description">
+        <p class="description-text">
+          Programmers use Text Editors to write and organize their code,
+          which enables them to develop codes quicker through use of the features
+          that are provided. Through the use of Text-Editors like Atom, Sublime Text,
+          and Notepad++ you can enable auto-formatting, and see codes easier than
+          if using something basic like word or notepad or writing by hand.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <h2 class="content-sub-title" id="lesson-3">Lesson 3: Adding CSS Style to HTML Structure</h2>
+      <div class="concept" id="lesson-3-1">
+        <h3 class="concept-sub-title">Avoiding Repeating Code and Errors</h3>
+        <div class="concept-description">
+          <figure>
+            <img class="image" src="img/paint.jpg" alt="Painting a house is like adding style to HTML">
+            <figcaption class="image-caption">Adding styles to the HTML structure</figcaption>
+          </figure>
+          <p class="description-text">
+            It is important while programming to not let areas slip into your code,
+            as the computer will read those errors and not correct them when it loads your code.
+          </p>
+          <p class="description-text">
+            When the browser for example loads a web page, it will process the page as you have coded it,
+            which means that if you don't add the correct tags or close them correctly, the page will be formatted
+            not as you would want it to be formatted.
+          </p>
+          <p class="description-text">
+            Another problem is that you might repeat code, and thus make the code longer to process than it needs to,
+            which will reduce the speed of an app or web page.
+          </p>
+          <p class="description-text">
+            It also makes it harder to edit a page,
+            as it is easier to edit a single div that covers multiple areas,
+            than having multiple divs that do the same thing that you have to edit individually.
+          </p>
+        </div>
+      </div>
+    <div class="concept" id="lesson-3-2">
+      <h3 class="concept-sub-title">CSS</h3>
+      <div class="concept-description">
+        <p class="description-text">
+          <b>CSS</b> or <b>Cascading Style Sheets</b> are much like the paint or style of a house,
+          as you are adding aspects to your app or web page,
+          that make it look more pleasing to the eye,
+          or improve the user experience.
+        </p>
+        <p class="description-text">
+          When you code with CSS and HTML,
+          you can include a CSS style page to add color,
+          different fonts, and more major changes,
+          often through use of <b>classes</b>,
+          which can be added to divs and other page tag elements.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-3-3">
+      <h3 class="concept-sub-title">Coding Resources</h3>
+      <div class="concept-description">
+        <p class="description-text"><b>When making this web page I used the following resources:</b></p>
+          <ul class="no-bullets">
+            <li class="list-text">
+              <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345401/modules/385165862675461/lessons/3851658626239847/concepts/38473885480923">
+              Andy's Website Notes</a> - An example web page that helps to explain the web, structuring a web page, and css styles.
+            </li>
+            <li class="list-text">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">
+              Mozilla HTML element reference</a> - Helps to explain HTML elements used on web pages.
+            </li>
+            <li class="list-text">
+              <a href="http://www.w3schools.com/tags/">
+              w3schools.com HTML Element Reference</a> - Is a good reference of element tags for use on web pages.
+            </li>
+            <li class="list-text">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">
+              Mozilla CSS Color Value</a> - Provides a good list of CSS color values, which helps with designing the look of a web page.
+            </li>
+            <li class="list-text">
+              <a href="https://pixabay.com/">
+              Pixabay</a> - Provides free stock images for personal or commercial use.
+            </li>
+            <li class="list-text">
+              <a href="http://www.iconarchive.com/show/blue-bits-icons-by-icojam/globe-search-icon.html">
+              Icon Archive</a> - Provides free stock image icons for personal or commercial use.
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
