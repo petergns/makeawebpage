@@ -1,2 +1,2 @@
-# createawebpage
-Udacity - Create a Web Page Project
+# makeawebpage
+Udacity - Make a Web Page Project
