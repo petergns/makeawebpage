@@ -1,6 +1,8 @@
 # Make a Web Page
 Udacity - Make a Web Page Project
 
+Live Preview Link: https://petergns.github.io/makeawebpage/
+
 # Set Up Instructions
 Follow these instructions to set up the Make a Web Page Project.
 
@@ -33,6 +35,9 @@ There are two files to edit in an editor.
   <li>index.html</li>
   <li>style.css</li>
 </ul>
+
+### Make a Web Page when in Browser:
+![Image of Output](https://github.com/petergns/makeawebpage/blob/master/webpage-preview.PNG)
 
 ## Author
 [petergns](https://github.com/petergns)
