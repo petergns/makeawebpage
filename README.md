@@ -26,6 +26,7 @@ This webpage will contain:
   <li>Links to You Tube videos</li>
   <li>Descriptions of concepts in web development</li>
   <li>Responsive images</li>
+  <li>Responsive layout</li>
   <li>CSS styling for the titles and sub-titles</li>
 </ul>
 
